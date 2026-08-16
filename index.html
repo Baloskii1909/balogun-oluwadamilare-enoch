@@ -21,7 +21,8 @@
     nav ul { display:flex; gap:22px; list-style:none; padding:0; margin:0; }
     nav a { text-decoration:none; font-size:.95rem; color:var(--muted); }
     nav a:hover { color:var(--accent); }
-    header { padding:110px 0 85px; background:linear-gradient(135deg,#eef3ff 0%,#fff 65%); }
+    header { padding:110px 0 85px; color: white; background-size: cover; background-position: center; background-repeat: no-repeat; animation: heroBackground 15s infinite; }
+    @keyframes heroBackground {0%, 30% { background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("photo1.jpg.jpg"); } 33%, 63% { background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("photo2.jpg.JPG"); } 66%, 100% { background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("photo3.jpg.jpeg"); } }
     .eyebrow { color:var(--accent); font-weight:800; text-transform:uppercase; letter-spacing:.12em; font-size:.78rem; }
     h1 { font-size:clamp(2.7rem,7vw,5.6rem); line-height:1.02; letter-spacing:-.055em; margin:16px 0 20px; max-width:850px; }
     .lead { font-size:1.2rem; max-width:700px; color:var(--muted); }
