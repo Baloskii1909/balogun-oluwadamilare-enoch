@@ -12,42 +12,39 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://baloskii1909.github.io/balogun-oluwadamilare-enoch/">
   <style>
-    :root { --ink:#f5f5f5; --muted:#a7adb5; --paper:#0b0d10; --card:#15181d; --line:#282d34; --accent:#d4af37; }
+    :root { --ink:#f5f5f5; --muted:#b7bcc4; --paper:#0b0d10; --card:rgba(21, 24, 29, 0.88); --line:rgba(255, 255, 255, 0.14); --accent:#d4af37; }
     * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-<script>
-  if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
-
-  window.scrollTo(0, 0);
-</script>
-    body { margin:0; font-family: 'Inter', sans-serif; color: #f5f5f5; background: #0b0d10; line-height:1.65; }
+    html { scroll-behavior:smooth; scroll-padding-top:68px; }
+    body { margin:0; font-family: 'Inter', sans-serif; color:var(--ink); background:linear-gradient(rgba(11, 13, 16, 0.90), rgba(11, 13, 16, 0.90) ), url("photo3.jpg.jpg") center / cover fixed; line-height:1.65; }
     a { color:inherit; }
     .wrap { width:min(1050px, 92%); margin:auto; }
-    nav { position:sticky; top:0; z-index:10; background:rgba(247,248,250,.94); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+    nav { position:sticky; top:0; z-index:10; background:rgba(11, 13, 16, 0.92); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
     nav .wrap { display:flex; justify-content:space-between; align-items:center; min-height:68px; }
-    .brand { font-weight:800; text-decoration:none; letter-spacing:-.02em; }
+    .brand { font-weight:800; text-decoration:none; letter-spacing:-.02em; color:#fff; }
     nav ul { display:flex; gap:22px; list-style:none; padding:0; margin:0; }
     nav a { text-decoration:none; font-size:.95rem; color:var(--muted); }
     nav a:hover { color:var(--accent); }
-    header { padding:110px 0 85px; color: white; background-size: cover; background-position: center; background-repeat: no-repeat; animation: heroBackground 15s infinite; }
+    header { padding:110px 0 85px; color: #fff; background-size: cover; background-position: center; background-repeat: no-repeat; animation: heroBackground 15s infinite; }
     @keyframes heroBackground {0%, 30% { background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("photo1.jpg (1).jpg"); } 33%, 63% { background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("photo2.jpg (1).jpg"); } 66%, 100% { background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("photo3.jpg.jpg"); } }
     .eyebrow { color:var(--accent); font-weight:800; text-transform:uppercase; letter-spacing:.12em; font-size:.78rem; }
     h1 { font-family: 'Playfair Display', serif; font-size:clamp(2.7rem,7vw,5.6rem); line-height:1.02; letter-spacing:-.055em; margin:16px 0 20px; max-width:850px; }
-    .lead { font-size:1.2rem; max-width:700px; color:var(--muted); }
+    .lead { font-size:1.2rem; max-width:700px; color:#e1e4e8; }
     .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
-    .btn { display:inline-block; padding:12px 18px; border-radius:10px; text-decoration:none; font-weight:750; border:1px solid var(--ink); }
-    .btn.primary { background:var(--ink); color:#fff; }
-    .btn.secondary { background:#fff; color:#111; }
+    .btn { display:inline-block; padding:12px 18px; border-radius:10px; text-decoration:none; font-weight:750; border:1px solid var(accent); transition: 0.2s ease; }
+    .btn.primary { background:var(--accent); color:#111; }
+    .btn.secondary { background:rgba(255, 255, 255, 0.08); color:#fff; border-color: rgba(255, 255, 255, 0.5); }
+    .btn:hover { transform: translateY(-2px); }
     section { padding:78px 0; }
-    h2 { font-family: 'Playfair Display', serif; font-size:2rem; letter-spacing:-.035em; margin:0 0 12px; }
-    .section-intro { color:var(--muted); max-width:720px; margin-bottom:30px; }
+    h2 { font-family: 'Playfair Display', serif; font-size:2rem; letter-spacing:-.035em; margin:0 0 12px; color:#fff; }
+    .section-intro { color:#d1d5db; max-width:720px; margin-bottom:30px; }
     .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
-    .card { background:#15181d; border:1px solid var(--line); border-radius:16px; padding:25px; box-shadow:0 5px 20px rgba(21,32,43,.04); }
-    .card h3 { margin-top:0; margin-bottom:7px; }
-    .meta { color:var(--muted); font-size:.92rem; }
+    .card { background: rgba(21, 24, 29, 0.88); color:#f5f5f5; border:1px solid rgba(255, 255, 255, 0.14); border-radius:16px; padding:25px; box-shadow:0 10px 30px rgba(0, 0, 0, 0.20); backdrop-filer: blur(8px) }
+    .card h3 { color:#fff; margin-top:0; margin-bottom:7px; }
+    .card p { color:#d7dbe0 }
+    .card .meta { color:#aeb5be; font-size:.92rem; }
     .skills { display:flex; flex-wrap:wrap; gap:10px; }
-    .tag { background:#fff; color:#111 ; border:1px solid var(--line); border-radius:999px; padding:8px 13px; font-size:.92rem; }
-    footer { border-top:1px solid var(--line); padding:35px 0; color:var(--muted); }
+    .tag { background:rgba(21, 24, 29, 0.82); color:#fff ; border:1px solid rgba(212, 175, 55, 0.55); border-radius:999px; padding:8px 13px; font-size:.92rem; backdrop-filter: blur(6px); }
+    footer { border-top:1px solid var(--line); padding:35px 0; color:var(--muted); background: rgba(11, 13, 16, 0.75); }
     @media(max-width:700px) { nav ul { display:none; } .grid { grid-template-columns:1fr; } header { padding:80px 0 65px; } section { padding:58px 0; } }
   </style>
 </head>
@@ -177,8 +174,6 @@
 </footer>
 <script>
   if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
-
-  window.scrollTo(0, 0);
 </script>
 </body>
 </html>
