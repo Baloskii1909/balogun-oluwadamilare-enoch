@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://baloskii1909.github.io/balogun-oluwadamilare-enoch/sitemap.xmlt
